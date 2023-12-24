@@ -17,13 +17,131 @@ width: 500px;
     .image1{
 width: 400px;
     }
+    .img11{
+        height: 50px ;
+            }
 }
 @media screen and (width < 420px) {
     .image1{
 width: 300px;
+    };
+
+}
+
+.img11{
+    height:20pc;
+    width:35%;
+    padding: 10%;
+    display: inline-block;
+}
+@media  screen and (width < 421px) {
+    .img11{
+        height: 100px ;
+            }
+}
+
+
+
+/* @media screen and (width<421px){
+ .div2{
+    display: block;
+   
+    margin-right: 120px;
+    padding-top: 50pc;
+    color: black;
+    background-color: aqua;
+    align-content:stretch;
+  }
+}
+@media screen and (width<421px){
+ .div1{
+    display: block;
+    margin-right: 10px;
+    padding-top: 50px;
+    color: black;
+    background-color: aqua;
+    align-content:stretch;
+  }
+} */
+
+.h31{
+    display: inline; 
+    margin:1%;
+   
+text-align: justify;
+   
+    
+}
+@media screen and (width<421px){
+    .h31{
+        display:inline-block ;
+        width: 150px;
+     font-size: small;
+     /* font-stretch: condensed;
+     flex-grow: inherit;
+     font-display:inherit ; */
     }
+   
 }
-.image1{
-    height: 400px;
+.if1{
+    display: inline-block;
+    width: 600px;
+    height: 200px;
+    /* padding: auto; */
+    margin: auto;
 }
+@media  (min-width:420px) and (max-width: 650px){
+    .if1{
+        display: inline-block;
+        width: 400px;
+        height: 200px;
+     margin-left: 5px;
+     margin-right: 19%;
+
+    }
+     } 
+
+@media screen and (width<420px){
+    .if1{
+       width: 300px;
+       height: 200px;
+       margin-right: 10%;
+       display: inline-block;
+    }
+     }
+
+.div1{
+    display: block;
+   
+}
+.div2{
+    display: block;
+    /* margin-left: 750px; */
+    /* padding-bottom: 100px; */
+}
+.if2{
+    display: inline-block;
+    width: 600px;
+    height: 200px;
+    margin: auto;
+    /* text-justify:distribute-all-lines; */
+    /* padding-bottom: 200px; */
+}
+@media screen and (width<421px){
+    .if2{
+       width: 350px;
+       height: 200px;
+       display: block;
+       text-justify:distribute-all-lines;
+      
+    }
+     }
+     @media screen and (width<600px) {
+        .div1{
+            margin-right: 55px;
+        }
+     }
+
+
+
 /* style={{width:1200,height:400,display:"flex",align:"center"}} */

@@ -129,13 +129,13 @@ return(
     )}
 </Card>
             </Grid>
-            <Grid sx={{margin:"5px",bgcolor:"white"}} item xs={3}>
+            {/* <Grid sx={{margin:"5px",bgcolor:"white"}} item xs={3}> */}
         
-            <ProductDetails idd={idd} show={show} newtit={newtit}  newCat={newCat} newImg={newImg} newPri={newPri} newStk={newStk}/>
+            {/* <ProductDetails idd={idd} show={show} newtit={newtit}  newCat={newCat} newImg={newImg} newPri={newPri} newStk={newStk}/> */}
 
+            {/* </Grid> */}
             </Grid>
-            </Grid>
-            <BuyPro idd={idd}/>
+            {/* <BuyPro idd={idd}/> */}
         </React.Fragment>
     )
 }

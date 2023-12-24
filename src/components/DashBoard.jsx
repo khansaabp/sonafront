@@ -22,6 +22,7 @@ import {Chart} from './Chart';
 import {Deposits} from './Deposites';
 import {Orders} from './Orders';
 
+
 function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
@@ -84,6 +85,7 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
 // TODO remove, this demo shouldn't need to reset the theme.
 const defaultTheme = createTheme();
 
+
 export  function Dashboard() {
   const [open, setOpen] = React.useState(true);
   const toggleDrawer = () => {
@@ -91,10 +93,10 @@ export  function Dashboard() {
   };
 
   return (
-    <ThemeProvider theme={defaultTheme}>
-      <Box sx={{ display: 'flex' }}>
+    <ThemeProvider theme={defaultTheme} >
+      <Box sx={{ display: 'flex' ,marginTop:"75px"}}>
         <CssBaseline />
-        <AppBar position="absolute" open={open}>
+        <AppBar sx={{marginTop:"70px"}} position="fixed" open={open}>
           <Toolbar
             sx={{
               pr: '24px', // keep right padding when drawer closed
@@ -128,13 +130,14 @@ export  function Dashboard() {
             </IconButton>
           </Toolbar>
         </AppBar>
-        <Drawer variant="permanent" open={open}>
+        <Drawer variant="permanent" open={open} position="fixed">
           <Toolbar
             sx={{
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'flex-end',
               px: [1],
+              position:"fixed"
             }}
           >
             <IconButton onClick={toggleDrawer}>
@@ -206,3 +209,5 @@ export  function Dashboard() {
     </ThemeProvider>
   );
 }
+
+

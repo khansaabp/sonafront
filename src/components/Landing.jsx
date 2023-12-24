@@ -1,4 +1,4 @@
-import React from "react"
+import React,{useState} from "react"
 import { NavBar } from "./NavBar";
 import { Home } from "./Home";
 import { Customers } from "./Customers";
@@ -8,34 +8,51 @@ import { Grid } from "@mui/material";
 import { AddProduct } from "./AddProduct";
 import { Dashboard } from "./DashBoard";
 import { BuyPro } from "./BuyPro";
-
+import { Login } from "./Login";
+// import {NavBarr} from "./NavBarr"
+import { NavBarrr } from "./NavBarrr";
+import { SignInSide } from "./signin/SignInSide";
+// import { SignUp } from "./signin/SignUp";
+import { NavBer } from "./NavBer";
+import { Register } from "./signin/Register";
+import { AddCom } from "./AddCom";
 
 export const Landing=()=>{
 
+
     return(
         <React.Fragment>
-            <Grid container spacing={1}>
+        
 
 
-
+       
          
 <BrowserRouter >
+{/* <NavBarrr/> */}
+{/* <NavBar/> */}
+{/* <NavBarr/> */}
+<NavBer />
 
-<NavBar/>
-<Grid item xs={12}>
+
+
 <Routes>
     
-    <Route path="/customers" element={<Customers/>}></Route>
+    <Route path="/Customers" element={<Customers/>}></Route>
     <Route path="/" element={<Home/>}></Route>
     <Route path="/productdetails" element={<ProductDetails/>}></Route>
-    <Route path="/addproduct" element={<AddProduct/>}></Route>
-    <Route path="/dashboard" element={<Dashboard/>}></Route>
+    <Route path="/Products" element={<AddProduct/>}></Route>
+    <Route path="/Dashboard" element={<Dashboard/>}></Route>
     <Route path="/buypro" element={<BuyPro/>}></Route>
+    <Route path="/Login" element={<Login/>}></Route>
+    {/* <Route path="/Login" element={<SignInSide/>}></Route> */}
+    {/* <Route path="/Register" element={<SignUp/>}></Route> */}
+    <Route path="/Register" element={<Register/>}></Route>
+    <Route path="/addcom" element={<AddCom/>}></Route>
+    
 </Routes>
-</Grid>
+
 </BrowserRouter>
 
-</Grid>
         </React.Fragment>
     )
 }

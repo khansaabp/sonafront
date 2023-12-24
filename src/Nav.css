@@ -1,4 +1,43 @@
-@media  (min-width:0px) and (max-width: 420px) {
+@media  (min-width:1px) and (max-width: 420px) {
     .home{
 display: "none";
+visibility: hidden;
     }}
+    
+    @media screen and (width>421px) {
+        .h11{
+            display: none;
+            visibility: hidden;
+        }
+    }
+    @media screen and (width< 420px) {
+        .largenav{
+    display: "none";
+    visibility: hidden;
+        }}
+    @media screen and (width> 420px) {
+        .smallnav{
+    display: "none";
+    visibility: hidden;
+        }}
+
+        @media screen and (width <600px) {
+            .b11{
+                display: "none";;
+                visibility: hidden;
+            }
+        }
+        .b11{
+            margin: auto;
+            
+        }
+        @media screen and (width >600px) {
+            .b12{
+                display: "none";;
+                visibility: hidden;
+            }
+        }
+        .b12{
+            display: flex;
+            margin-left: 450px;
+        }
